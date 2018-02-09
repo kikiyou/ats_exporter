@@ -9,7 +9,7 @@ import (
 var (
 	config        ATSExporterConfig
 	defaultConfig = ATSExporterConfig{
-		ATSURL: "http://localhost:80/_stats",
+		ATSURL: "http://localhost:8080/_stats",
 	}
 )
 

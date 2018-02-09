@@ -41,7 +41,7 @@ func main() {
 		"BUILD_DATE": BuildDate,
 	}).Info("Starting ATS exporter")
 
-	log.Fatal(http.ListenAndServe(":9090", nil))
+	log.Fatal(http.ListenAndServe(":39901", nil))
 }
 
 func getLogLevel() log.Level {
