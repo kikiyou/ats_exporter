@@ -35,18 +35,18 @@ func loadMetrics(config ATSExporterConfig) (*json.Decoder, error) {
 	return json.NewDecoder(bytes.NewBuffer(body)), nil
 }
 
-func getStatsInfo(config ATSExporterConfig) ([]StatsInfo, error) {
-	var q []StatsInfo
+// func getStatsInfo(config ATSExporterConfig) ([]StatsInfo, error) {
+// 	var q []StatsInfo
 
-	d, err := loadMetrics(config)
-	if err != nil {
-		return q, err
-	}
+// 	d, err := loadMetrics(config)
+// 	if err != nil {
+// 		return q, err
+// 	}
 
-	q = MakeStatsInfo(d)
+// 	q = MakeStatsInfo(d)
 
-	return q, nil
-}
+// 	return q, nil
+// }
 
 func getMetricMap(config ATSExporterConfig) (MetricMap, error) {
 	var overview MetricMap
